@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Leinn Bird</title>
+    <title>Leinn Rocket</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
 
@@ -38,7 +38,7 @@
 
 <body>
     <header>
-        <h1>Leinn Bird</h1>
+        <h1>Leinn Rocket</h1>
         <div class="score-container">
             <div id="bestScore"></div>
             <div id="currentScore"></div>
@@ -51,14 +51,14 @@
         const canvas = document.getElementById('canvas');
         const ctx = canvas.getContext('2d');
         const img = new Image();
-        img.src = "https://i.ibb.co/zSNgHHz/leinn-Bird.png";
+        img.src = "https://i.ibb.co/BqsT10b/leinn-Bird-Final.png";
 
         // general settings
         let gamePlaying = false;
-        const gravity = .5;
-        const speed = 6.2;
+        const gravity = .14;
+        const speed = 3;
         const size = [51, 36];
-        const jump = -11.5;
+        const jump = -6;
         const cTenth = (canvas.width / 10);
 
         let index = 0,
